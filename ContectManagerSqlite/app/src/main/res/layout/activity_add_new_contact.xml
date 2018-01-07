@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.fahee.contectmanagersqlite.AddNewContact">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name:"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="88dp"
+        android:layout_above="@+id/etName"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_marginBottom="11dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="67dp"
+        android:layout_height="30dp"
+        android:text="Mobile Number"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="193dp"
+        android:layout_above="@+id/etMobileNumber"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="12dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="282dp"
+        android:layout_above="@+id/etEmail"
+        android:layout_alignEnd="@+id/textView2"
+        android:layout_marginEnd="16dp" />
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="178dp"
+        android:layout_height="44dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        tools:layout_editor_absoluteX="109dp"
+        tools:layout_editor_absoluteY="88dp"
+        android:layout_above="@+id/etMobileNumber"
+        android:layout_alignStart="@+id/etMobileNumber"
+        android:layout_marginBottom="50dp" />
+
+    <EditText
+        android:id="@+id/etMobileNumber"
+        android:layout_width="174dp"
+        android:layout_height="44dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Mobile Num"
+        tools:layout_editor_absoluteX="109dp"
+        tools:layout_editor_absoluteY="193dp"
+        android:layout_above="@+id/etEmail"
+        android:layout_alignEnd="@+id/btnSave"
+        android:layout_marginBottom="100dp" />
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="216dp"
+        android:layout_height="39dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="abc@gmail.com"
+        tools:layout_editor_absoluteX="68dp"
+        tools:layout_editor_absoluteY="274dp"
+        android:layout_above="@+id/btnSave"
+        android:layout_alignStart="@+id/btnSave"
+        android:layout_marginBottom="22dp" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="197dp"
+        android:layout_height="44dp"
+        android:text="Save"
+        tools:layout_editor_absoluteX="95dp"
+        tools:layout_editor_absoluteY="360dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="80dp" />
+</RelativeLayout>
